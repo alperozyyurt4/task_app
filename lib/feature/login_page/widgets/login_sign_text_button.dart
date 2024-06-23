@@ -1,7 +1,7 @@
-part of '../sign_up_view.dart';
+part of '../login_view.dart';
 
-class _LoginTextButton extends StatelessWidget {
-  const _LoginTextButton({super.key, required VoidCallback onPressed}) : _onPressed = onPressed;
+class _SignUpTextButton extends StatelessWidget {
+  const _SignUpTextButton({super.key, required VoidCallback onPressed}) : _onPressed = onPressed;
   final VoidCallback _onPressed;
 
   @override
@@ -15,7 +15,7 @@ class _LoginTextButton extends StatelessWidget {
       ),
       onPressed: _onPressed,
       child: const Text(
-        AppKeys.loginTitle,
+        AppKeys.signUpTitle,
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,

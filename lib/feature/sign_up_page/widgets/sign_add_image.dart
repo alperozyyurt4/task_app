@@ -18,10 +18,10 @@ class _AddImage extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
-            border: Border.all(color: SignUpeys.appBlueColor, width: 1),
+            border: Border.all(color: AppKeys.appBlueColor, width: 1),
           ),
           child: Icon(
-            color: SignUpeys.appBlueColor,
+            color: AppKeys.appBlueColor,
             SignUpeys.personIcon,
             size: profilePicSize * 0.5,
           ),
@@ -36,11 +36,11 @@ class _AddImage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.white,
                 shape: BoxShape.circle,
-                border: Border.all(color: SignUpeys.appBlueColor, width: 1),
+                border: Border.all(color: AppKeys.appBlueColor, width: 1),
               ),
               child: Icon(
                 SignUpeys.cameraIcon,
-                color: SignUpeys.appBlueColor,
+                color: AppKeys.appBlueColor,
                 size: camreIconSize * 0.6,
               ),
             ),

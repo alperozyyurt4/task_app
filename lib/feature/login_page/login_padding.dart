@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-enum SignUpPadding {
-  /// 10
-  low(10),
+enum LoginPadding {
+  ///10
+  low(5),
 
-  /// 20
-  medium(25),
+  ///20
+  medium(20),
 
-  /// 30
-  high(50);
+  ///40
+  high(40);
 
   final double value;
-  const SignUpPadding(this.value);
+
+  const LoginPadding(this.value);
 
   /// All sides padding with [value]
   EdgeInsets get padding => EdgeInsets.all(value);
@@ -21,4 +22,7 @@ enum SignUpPadding {
 
   /// Horizontal sides padding with [value]
   EdgeInsets get paddingHorizontal => EdgeInsets.symmetric(horizontal: value);
+
+  /// Symetric sides padding with [value]
+  EdgeInsets get paddingSymetric => EdgeInsets.symmetric(vertical: value, horizontal: value);
 }

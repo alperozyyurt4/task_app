@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task_app/feature/sign_up_page/sign_up_keys.dart';
+import 'package:task_app/core/app_keys.dart';
 
 class CreateButton extends StatelessWidget {
   const CreateButton({
@@ -18,11 +18,7 @@ class CreateButton extends StatelessWidget {
         onPressed: _onPressed,
         child: Text(
           _text,
-          style: const TextStyle(color: SignUpeys.appBlueColor, fontSize: 18, fontWeight: FontWeight.w900),
+          style: const TextStyle(color: AppKeys.appBlueColor, fontSize: 18, fontWeight: FontWeight.w900),
         ));
   }
 }
-
-
-
-// TODO: VoidCallBack onPress parametre olarak alınacak required

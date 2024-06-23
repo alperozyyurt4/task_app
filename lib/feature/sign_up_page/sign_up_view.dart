@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import 'package:task_app/core/app_keys.dart';
+import 'package:task_app/core/navi_func.dart';
+import 'package:task_app/feature/login_page/login_view.dart';
 import 'package:task_app/feature/sign_up_page/sign_up_keys.dart';
 import 'package:task_app/feature/sign_up_page/sign_up_mixin.dart';
 import 'package:task_app/feature/sign_up_page/sign_up_padding.dart';
@@ -56,7 +58,7 @@ class _SignUpViewState extends State<SignUpView> with SignUpMixin {
                 /// Sign Up button
 
                 CreateButton(
-                  text: SignUpeys.signUpButtonTitle,
+                  text: AppKeys.signUpTitle,
                   onPressed: () {
                     ScaffoldMessenger.of(context)
                         .showSnackBar(const SnackBar(content: Text('Fonksiyonellik eklenecek')));
@@ -71,10 +73,7 @@ class _SignUpViewState extends State<SignUpView> with SignUpMixin {
                     children: [
                       const Text(SignUpeys.alreadyAccTitle, style: TextStyle(color: Colors.white, fontSize: 16)),
                       _LoginTextButton(
-                        onPressed: () {
-                          ScaffoldMessenger.of(context)
-                              .showSnackBar(const SnackBar(content: Text('Fonksiyonellik eklenecek')));
-                        },
+                        onPressed: () => NaviFunc(context, page: const LoginView()),
                       ),
                     ],
                   ),

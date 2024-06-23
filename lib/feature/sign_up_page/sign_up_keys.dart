@@ -20,9 +20,4 @@ final class SignUpeys {
   static const cameraIcon = Icons.camera_alt;
 
   /// Colors
-  static const appBlueColor = Color(0xAA3f79ff);
-
-  /// Buttons
-  static const signUpButtonTitle = 'Sign Up';
-  static const loginButtonTitle = 'Login';
 }
